@@ -63,32 +63,28 @@ Perform the following steps to create the VM
  ```
  sudo reboot
  ```
-9. Reboot with "Advanced Loader Options". Then you should get a list of the kernels. Select linux-image 4.11.0 generic+ and boot
-10. Once logged in, verify the kernel with the following kernel.
+8. Reboot with "Advanced Loader Options". Then you should get a list of the kernels. Select linux-image 4.11.0 generic+ and boot
+9. Once logged in, verify the kernel with the following kernel.
  ```
  uname -sr
  ```
-11. if it does not give Linux "4.11.1-041101-generic", repeat from step 5.
-12. Run the following commag command to make bbr congestion control available.
+10. if it does not give Linux "4.11.1-041101-generic", repeat from step 5.
+11. Run the following commag command to make bbr congestion control available.
  ```
  sudo modprobe tcp_bbr
  ```
-13. change the following line in mahimahi/init_deps.sh file
+12. change the following line in mahimahi/init_deps.sh file
  ```
  pip install matplotlib
       to 
  sudo apt-get install python-matplotlib 
  ```
-14. Now, run the following command to run the experiments.
+13. Now, run the following command to run the experiments.
  ```
  sudo ./run_all.sh
  ```
-16. It will take around 7 hours to complete the experiment. Once finished, results can be viewed in the following folders.
+14. It will take around 7 hours to complete the experiment. Once finished, results can be viewed in the following folders.
  1. data - All the data for the experiments will be generated here.
  2. figures -  All the figures will be generated here.  
 
 This will conculde the experiment.
-19. sd
-20. sd 
-
-
