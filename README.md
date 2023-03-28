@@ -83,8 +83,17 @@ Perform the following steps to create the VM
  ```
  sudo ./run_all.sh
  ```
-14. It will take around 7 hours to complete the experiment. Once finished, results can be viewed in the following folders.
+14. You can also run the individual experiments with the following commands
+ ```
+ sudo ./run_figure8_experiment.sh
+ sudo ./run_experiment1.sh
+ sudo ./run_experiment2.sh
+ sudo ./run_experiment3.sh
+ sudo ./run_experiment4.sh
+ ```
+16. It will take around 7 hours to complete the experiment. Once finished, results can be viewed in the following folders.
  1. data - All the data for the experiments will be generated here.
  2. figures -  All the figures will be generated here.  
+
 
 This will conculde the experiment.
