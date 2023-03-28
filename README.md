@@ -64,7 +64,7 @@ Perform the following steps to create the VM
  sudo reboot
  ```
 8. Reboot with "Advanced Loader Options". Then you should get a list of the kernels. Select linux-image 4.11.0 generic+ and boot
-9. Once logged in, verify the kernel with the following kernel.
+9. Once logged in, verify the kernel with the following command.
  ```
  uname -sr
  ```
