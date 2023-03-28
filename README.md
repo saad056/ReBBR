@@ -92,8 +92,8 @@ Perform the following steps to create the VM
  sudo ./run_experiment4.sh
  ```
 15. It will take around 7 hours to complete the experiment. Once finished, results can be viewed in the following folders.
- 1. data - All the data for the experiments will be generated here.
- 2. figures -  All the figures will be generated here.  
+ - 1. data - All the data for the experiments will be generated here.
+ - 2. figures -  All the figures will be generated here.  
 
 
 This will conculde the experiment.
