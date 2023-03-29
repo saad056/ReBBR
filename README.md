@@ -1,11 +1,9 @@
 # Comparison between Cubic and BBR
 
-In this experiment, I reproduced the graphs from following two blogs.
+In this experiment, I reproduced the graphs from the following blog.
+https://reproducingnetworkresearch.wordpress.com/2017/06/05/rebbr/
 
-1. https://reproducingnetworkresearch.wordpress.com/2017/06/05/rebbr/
-2. https://reproducingnetworkresearch.wordpress.com/2017/06/05/cs-244-17-congestion-based-congestion-control-with-bbr/
-
-Follow the instructions below to reproduce the experiements from the blog 1.
+Follow the instructions below to reproduce the experiements from the blog.
 
 ## Blog 1 Experiment reproduction
 
@@ -23,7 +21,7 @@ Perform the following steps to create the VM
 
 ### Installation & Running Experiments
 
-1. Login or SSH to the machine.
+1. Login to the machine and install git using the below command. ``` sudo apt-get install -y git ```
 2. Clone the repository into the bbr folder.
  ```
  git clone https://https:github.com/jervisfm/rebbr.git bbr
