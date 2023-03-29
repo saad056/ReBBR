@@ -5,7 +5,7 @@ https://reproducingnetworkresearch.wordpress.com/2017/06/05/rebbr/
 
 Follow the instructions below to reproduce the experiements from the blog.
 
-## Blog 1 Experiment reproduction
+## Blog Experiment reproduction
 
 To run the experiment, we will create one vm with Linux kernel that includes congestion control "bbr". It will take around 7 hours to run all the experiments.
 
