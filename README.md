@@ -21,15 +21,9 @@ Perform the following steps to create the VM
 
 ### Installation & Running Experiments
 
-1. Login to the machine and install git using the below command. ``` sudo apt-get install -y git ```
-2. Clone the repository into the bbr folder.
- ```
- git clone https://https:github.com/jervisfm/rebbr.git bbr
- ```
-3. Give permission to the "bbr" folder
- ```
- sudo chmod -R 777 bbr *
- ```
+1. Login to the machine and install git using the command. ``` sudo apt-get install -y git ```
+2. Clone the repository into the bbr folder. ``` git clone https://https:github.com/jervisfm/rebbr.git bbr ```
+3. Give permission to the "bbr" folder. ``` sudo chmod -R 777 bbr * ```
 4. Change the content of the file vm_upgrade_kernel.sh with the following.
  ```
  set +x
@@ -47,40 +41,29 @@ Perform the following steps to create the VM
  rm -f *.deb
  echo "Reboot the Machine and verify installation with uname -sr
  ```
-5. Run the following command to install the kernel 4.11.0
- ```
- cd bbr && ./vm_upgrade_kernel.sh
- ```
-6. Run the following command to see the kernel is installed on your vm.
- ```
- dpkg --list | grep linux-image
- ```
+5. Run the following command to install the kernel 4.11.0. ``` cd bbr && ./vm_upgrade_kernel.sh ```
+
+6. Run the following command to see the kernel is installed on your vm. ``` dpkg --list | grep linux-image ```
  This should give you the list of the kernels available in your vm.
  
-7. now reboot the machine
- ```
- sudo reboot
- ```
+7. now reboot the machine. ``` sudo reboot ```
+
 8. Reboot with "Advanced Loader Options". Then you should get a list of the kernels. Select linux-image 4.11.0 generic+ and boot
-9. Once logged in, verify the kernel with the following command.
- ```
- uname -sr
- ```
+
+9. Once logged in, verify the kernel with the following command. ``` uname -sr ```
+
 10. if it does not give Linux "4.11.1-041101-generic", repeat from step 5.
-11. Run the following commag command to make bbr congestion control available.
- ```
- sudo modprobe tcp_bbr
- ```
-12. change the following line in mahimahi/init_deps.sh file
+
+11. Run the following commag command to make bbr congestion control available. ``` sudo modprobe tcp_bbr ```
+
+12. change the following line in mahimahi/init_deps.sh file.
  ```
  pip install matplotlib
       to 
  sudo apt-get install python-matplotlib 
  ```
-13. Now, run the following command to run the experiments.
- ```
- sudo ./run_all.sh
- ```
+13. Now, run the following command to run the experiments. ``` sudo ./run_all.sh ```
+
 14. You can also run the individual experiments with the following commands
  ```
  sudo ./run_figure8_experiment.sh
