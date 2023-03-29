@@ -54,7 +54,7 @@ Perform the following steps to create the VM
 
 10. if it does not give Linux "4.11.1-041101-generic", repeat from step 5.
 
-11. Run the following commag command to make bbr congestion control available. ``` sudo modprobe tcp_bbr ```
+11. Run the command to make bbr congestion control available. ``` sudo modprobe tcp_bbr ```
 
 12. change the following line in mahimahi/init_deps.sh file.
  ```
@@ -62,7 +62,7 @@ Perform the following steps to create the VM
       to 
  sudo apt-get install python-matplotlib 
  ```
-13. Now, run the following command to run the experiments. ``` sudo ./run_all.sh ```
+13. Now, run the command to run the experiments. ``` sudo ./run_all.sh ```
 
 14. You can also run the individual experiments with the following commands
  ```
