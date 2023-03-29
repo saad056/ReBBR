@@ -21,7 +21,7 @@ Perform the following steps to create the VM
 
 ### Installation & Running Experiments
 
-1. Login to the machine and install git using the command. ``` sudo apt-get install -y git ```
+1. Login to the machine and install git using the command. ``` sudo apt-get install git ```
 2. Clone the repository into the bbr folder. ``` git clone https://https:github.com/jervisfm/rebbr.git bbr ```
 3. Give permission to the "bbr" folder. ``` sudo chmod -R 777 bbr * ```
 4. Change the content of the file vm_upgrade_kernel.sh with the following.
